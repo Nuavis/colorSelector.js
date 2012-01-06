@@ -1,0 +1,5 @@
+colorSelector.js
+
+Allows you to add a html5 canvas color selection to your webpage
+
+A basic implementation can be viewed in example.html.
