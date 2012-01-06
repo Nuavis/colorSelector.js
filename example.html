@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+	<head>
+		<title>colorSelector.js Example Usage</title>
+		<script src='js/colorSelector.js'></script>
+		<script>
+			window.onload = function(){
+				document.getElementById("button").onclick = function(){
+					var cw = new colorSelector(window.innerWidth/2 - 200,window.innerHeight/2 - 200,400,function(color){
+						document.getElementById("output").value = color.toString(16);
+					});	
+				};
+			};
+		</script>
+	</head>
+	<body>
+		<input type='button' id='button' value='Press for Color'/>
+		<input type='text' id='output' value=''/>
+	</body>
+</html>
