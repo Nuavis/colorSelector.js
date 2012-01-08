@@ -58,7 +58,6 @@ var colorSelector = function(x,y,size,callback){
 			//On base color selector/sidebar
 			var p = my / size;
 			p = (p>=1)?.99:((p<0)?0:p);
-			console.log(p);
 			cw.baseColor = cw.getBaseColor(p);
 			cw.baseColorRed = (cw.baseColor & 0xFF0000)>>16;
 			cw.baseColorGreen = (cw.baseColor & 0x00FF00)>>8;
